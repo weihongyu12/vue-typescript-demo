@@ -41,7 +41,7 @@ export default Vue.extend({
   },
   methods: {
     onConfirm(value: string): void {
-      const resumeId = this.pickerMap.get(value);
+      const resumeId = this.pickerMap.get(value); // Property 'pickerMap' does not exist on type 'Vue'.
       this.$emit('confirm', resumeId);
     },
   },
